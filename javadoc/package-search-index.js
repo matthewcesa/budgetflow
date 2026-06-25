@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"com.budgetflow.demo"},{"l":"com.budgetflow.demo.controller"},{"l":"com.budgetflow.demo.Entity"},{"l":"com.budgetflow.demo.repository"}];updateSearchResults();
