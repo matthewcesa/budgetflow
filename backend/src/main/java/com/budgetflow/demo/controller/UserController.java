@@ -7,18 +7,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 public class UserController {
+
     private final UserRepository userRepository;
 
     public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-    /**
-     * cherche tous les utilisateurs
-     * @return retourne tous les utilisateurs
-     */
     @GetMapping
     public List<User> getAllUsers() {
         return userRepository.findAll();
@@ -28,6 +25,5 @@ public class UserController {
     public User createUser(@RequestBody User user) {
         return userRepository.save(user);
     }
-
 
 }
